@@ -850,6 +850,30 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Cinzel', serif; font-weight: 600; line-he
   z-index: 1;
 }
 
+.testi-gallery {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+.testi-gallery img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, border-color 0.2s;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.testi-gallery img:hover {
+  transform: scale(1.05);
+  border-color: var(--gold);
+}
+.testi-gallery::-webkit-scrollbar { height: 4px; }
+.testi-gallery::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
 /* ============================================================
    FOOTER
    ============================================================ */
