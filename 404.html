@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Path Not Found | Marari MVG CVN Kalari</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="overflow-x: hidden;">
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar"><a href="index.html" class="mobile-logo-left"><img src="images/logo.png" alt="Logo"><span>MVG CVN KALARI</span></a>
+        <div class="nav-container">
+            <ul class="nav-links nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+            </ul>
+            <div class="nav-brand-centered">
+                <div class="logo-diamond"></div>
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links nav-right">
+                <li><a href="treatments.html">Treatments</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars" id="toggleIcon"></i></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-wrapper" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="treatments.html">Treatments</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- 404 Hero Section -->
+    <section class="page-hero" style="background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero1.jpg'); min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+        <div class="reveal">
+            <span class="section-label">Error 404</span>
+            <h1 class="hero-title" style="font-size: 5rem; margin-bottom: 0.5rem; color: var(--gold);">404</h1>
+            <h2 class="section-title" style="font-size: 2.5rem; margin-bottom: 2rem;">The Path is Obscured</h2>
+            <p class="section-subtitle" style="max-width: 600px; margin: 0 auto 3rem; color: var(--muted);">
+                Just as a warrior finds focus in silence, sometimes the path we seek is hidden. The page you are looking for has moved or does not exist.
+            </p>
+            <div class="hero-btns" style="justify-content: center;">
+                <a href="index.html" class="btn btn-solid"><i class="fas fa-home"></i> Return to Gurukulam</a>
+                <a href="contact.html" class="btn"><i class="fas fa-envelope"></i> Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Pop-up -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Ensure the reveal animation works on the 404 page too
+        document.addEventListener('DOMContentLoaded', () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => el.classList.add('active'));
+        });
+    </script>
+</body>
+</html>

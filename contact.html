@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Marari MVG CVN Kalari – begin your Kalaripayattu journey or enquire about Marma healing therapies.">
+    <title>Contact Us | Marari MVG CVN Kalari</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+      /* ---- Contact specific ---- */
+      .contact-input {
+        width: 100%; padding: 1rem 1.2rem;
+        background: rgba(255,255,255,0.04);
+        border: 1px solid var(--border);
+        border-radius: 4px; color: #fff;
+        font-family: 'Inter', sans-serif; font-size: 0.95rem;
+        transition: border-color 0.25s; outline: none;
+      }
+      .contact-input:focus { border-color: var(--gold); }
+      .contact-input::placeholder { color: var(--muted); }
+
+      .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+      @media(max-width:600px) { .form-row { grid-template-columns: 1fr; } }
+
+      /* Equal-height columns */
+      .contact-grid {
+        display: grid; grid-template-columns: 1fr 1fr;
+        gap: 3rem; align-items: stretch;
+      }
+      @media(max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+
+      .contact-card {
+        display: flex; flex-direction: column;
+        background: var(--dark-card);
+        border: 1px solid var(--border); border-radius: 4px;
+        position: relative; overflow: hidden;
+      }
+      .contact-card::before {
+        content: ''; position: absolute; left: 0; top: 0;
+        width: 2px; height: 100%; background: var(--gold);
+      }
+
+      .contact-info-body { padding: 2rem; flex: 1; }
+      .contact-form-body { padding: 2rem; flex: 1; display: flex; flex-direction: column; }
+      .contact-form-body form { flex: 1; display: flex; flex-direction: column; gap: 1.2rem; }
+
+      .contact-info-item {
+        display: flex; gap: 1.2rem; align-items: flex-start;
+        padding: 1.2rem 0; border-bottom: 1px solid var(--border);
+      }
+      .contact-info-item:last-child { border-bottom: none; }
+      .contact-info-item i { color: var(--gold); font-size: 1.3rem; padding-top: 2px; min-width: 24px; }
+      .contact-info-item strong { display: block; color: #fff; margin-bottom: 0.3rem; }
+      .contact-info-item span { color: var(--muted); font-size: 0.93rem; }
+
+      /* Full-width map section */
+      .map-section { width: 100%; height: 420px; overflow: hidden; }
+      .map-section iframe { width: 100%; height: 100%; border: 0; display: block; }
+    </style>
+</head>
+<body>
+
+    <!-- Top Info Bar -->
+    <div class="top-header">
+        <div class="top-header-info">
+            <span><i class="fas fa-map-marker-alt"></i> Mararikulam, Alappuzha</span>
+            <span><i class="fas fa-phone"></i> +91 <a href="tel:6282758788" class="text-muted">6282758788</a></span>
+        </div>
+        <div class="top-header-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar"><a href="index.html" class="mobile-logo-left"><img src="images/logo.png" alt="Logo"><span>MVG CVN KALARI</span></a>
+        <div class="nav-container">
+            <ul class="nav-links nav-left">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-item-dropdown">
+                    <a href="about.html">About Us <i class="fas fa-chevron-down" style="font-size:0.7rem;margin-left:4px;"></i></a>
+                    <div class="mega-menu">
+                        <div class="mega-menu-left">
+                            <h3>Experience the Tradition</h3>
+                            <p>Marari MVG CVN Kalari — authentic Kalaripayattu training and traditional healing, led by Brejesh S. Gurukkal.</p>
+                            <a href="about.html" class="btn">Learn More</a>
+                        </div>
+                        <div class="mega-menu-right">
+                            <img src="images/WhatsApp Image 2026-03-31 at 19.47.25.png" alt="Brejesh S. Gurukkal">
+                        </div>
+                    </div>
+                </li>
+                <li><a href="classes.html">Classes</a></li>
+            </ul>
+            <div class="nav-brand-centered">
+                <div class="logo-diamond"></div>
+                <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+            <ul class="nav-links nav-right">
+                <li><a href="treatments.html">Treatments</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars" id="toggleIcon"></i></button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-wrapper" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="treatments.html">Treatments</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header with local hero image -->
+    <div class="page-hero" style="background-image:url('images/hero1.jpg');">
+        <span class="section-label">Reach Out</span>
+        <h1 class="hero-title">Get In Touch</h1>
+        <p class="section-subtitle">Begin your journey towards authentic strength, healing, and inner awakening.</p>
+    </div>
+
+    <!-- Contact Section — Equal Height Columns -->
+    <section class="section" style="padding-bottom: 0;">
+        <div class="contact-grid reveal">
+
+            <!-- Left: Contact Information -->
+            <div class="contact-card">
+                <div class="contact-info-body">
+                    <h3 style="color:var(--gold);font-family:'Cinzel',serif;font-size:1.1rem;margin-bottom:1.5rem;letter-spacing:1px;">
+                        Contact Information
+                    </h3>
+                    <div class="contact-info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <span>Mararikkulam, Alappuzha, Kerala, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Call Us</strong>
+                            <span>+91 <a href="tel:6282758788" class="text-muted">6282758788</a><br>Brejesh S. Gurukkal</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <span>info@mararimvgcvn.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Training Hours</strong>
+                            <span>4:00 AM – 7:00 AM &amp; 5:00 PM – 8:00 PM<br>Monday to Saturday</span>
+                        </div>
+                    </div>
+                    <!-- Social icons at bottom -->
+                    <div style="margin-top:2rem;display:flex;gap:1rem;padding-top:1.5rem;border-top:1px solid var(--border);">
+                        <a href="#" style="width:40px;height:40px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)';" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)';"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="width:40px;height:40px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)';" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)';"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="width:40px;height:40px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--muted);transition:all 0.2s;" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)';" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)';"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="contact-card">
+                <div class="contact-form-body">
+                    <h3 style="color:var(--gold);font-family:'Cinzel',serif;font-size:1.1rem;margin-bottom:1.5rem;letter-spacing:1px;">
+                        Send Us a Message
+                    </h3>
+                    <form>
+                        <div class="form-row">
+                            <input class="contact-input" type="text" placeholder="Your Name">
+                            <input class="contact-input" type="email" placeholder="Email Address">
+                        </div>
+                        <input class="contact-input" type="tel" placeholder="Phone Number">
+                        <input class="contact-input" type="text" placeholder="Subject">
+                        <select class="contact-input">
+                            <option value="" disabled selected>Enquiry Type</option>
+                            <option>Kalaripayattu Training</option>
+                            <option>Marma Healing Therapy</option>
+                            <option>Residential Program</option>
+                            <option>General Enquiry</option>
+                        </select>
+                        <textarea class="contact-input" rows="5" placeholder="How can we help you?" style="flex:1;resize:none;"></textarea>
+                        <button type="submit" class="btn btn-solid" style="width:100%;justify-content:center;padding:1.1rem;">
+                            <i class="fas fa-paper-plane"></i>&nbsp; Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Width Map -->
+    <div class="map-section" style="margin-top:4rem;">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62963.2685934538!2d76.29774676451634!3d9.508316279316527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08830722288031%3A0xe4061a5905d41571!2sMararikulam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1712242130768!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer"><img src="images/logo.png" class="logo-watermark" alt="watermark">
+        <div class="footer-grid">
+            <div>
+                <a href="index.html" style="display:inline-block;margin-bottom:1rem;"><a href="index.html"><img src="images/logo.png" alt="Logo" class="footer-logo"></a></a>
+                <p class="text-muted" style="font-size:0.9rem;line-height:1.8;">Preserving the authentic system of Kalari training, Kalari Yoga, and Kalari healing therapies in Mararikulam.</p>
+            </div>
+            <div>
+                <span class="footer-title">Quick Links</span>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="footer-title">More</span>
+                <ul class="footer-links">
+                    <li><a href="treatments.html">Treatments</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="footer-title">Contact</span>
+                <ul class="footer-links">
+                    <li style="color:var(--muted);display:flex;gap:0.5rem;"><i class="fas fa-map-marker-alt"></i> Mararikkulam, Alappuzha, Kerala</li>
+                    <li style="color:var(--muted);display:flex;gap:0.5rem;"><i class="fas fa-phone"></i> <a href="tel:6282758788" class="text-muted">6282758788</a></li>
+                    <li style="color:var(--muted);display:flex;gap:0.5rem;"><i class="fas fa-user"></i> Brejesh S. Gurukkal</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Marari MVG CVN Kalari. All Rights Reserved.<br>
+            <span style="font-size:0.8rem;opacity:0.6;">Designed by <a href="https://bten.in" target="_blank" style="color:var(--gold);">Bten.in</a></span>
+        </div>
+    </footer>
+
+    <div class="scroll-top" id="scrollTop">
+        <svg class="progress-circle" width="52" height="52" viewBox="0 0 52 52">
+            <circle cx="26" cy="26" r="24"></circle>
+        </svg>
+        <i class="fas fa-arrow-up" style="position:absolute;font-size:1rem;"></i>
+    </div>
+    <script src="script.js"></script>
+<div class="lightbox" id="lightbox"><span class="lightbox-close" id="lightboxClose">&times;</span><img class="lightbox-content" id="lightboxImg" src="" alt="Full size"></div></body>
+</html>
